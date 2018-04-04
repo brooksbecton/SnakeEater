@@ -1,0 +1,15 @@
+<h1>Recipes</h1>
+<nav>
+    <span>
+        <a href="new">NEW</a>
+    </span>
+</nav>
+<ul>
+    {% for recipe in object_list %}
+    <li>
+        <a href="{{recipe.id}}">{{ recipe.name }}</a>
+    </li>
+    {% empty %}
+    <li>No recipes yet.</li>
+    {% endfor %}
+</ul>
