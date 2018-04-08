@@ -1,8 +1,9 @@
 from django import forms
+from django.forms import ModelForm
+from .models import RecipeIngredient
 
 
-class NewRecipeForm(forms.Form):
-    name = forms.CharField(label='Recipe Name', max_length=100)
-    description = forms.CharField(label='Recipe Name', max_length=200)
-    steps = forms.CharField(label='Recipe (CSV)',
-                            max_length=300, widget=forms.Textarea)
+class NewRecipeForm(ModelForm):
+    class Meta:
+        model = RecipeIngredient
+        fields = '__all__'

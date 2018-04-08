@@ -4,8 +4,16 @@
 <a href="{% url 'recipes:update' recipe.id%}">Edit</a>
 <a href="{% url 'recipes:delete' recipe.id%}">Delete</a>
 
+<h2>Steps</h2>
 <ol>
     {% for step in recipe.stepsAsList %}
-    <li>{{ step }}</li>
+    <li>{{ step | title }}</li>
     {% endfor %}
 </ol>
+
+<h2>Ingredients</h2>
+<ul>
+    {% for i in recipe.recipeingredient_set.all %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
