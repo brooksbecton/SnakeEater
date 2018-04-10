@@ -1,8 +1,21 @@
+{% extends 'recipes/base.html' %} {% block content %}
+
+
 <h1>{{ recipe }}</h1>
 <p>{{recipe.description}}</p>
 
-<a href="{% url 'recipes:update' recipe.id%}">Edit</a>
-<a href="{% url 'recipes:delete' recipe.id%}">Delete</a>
+<a href="{% url 'recipes:update' recipe.id%}">
+    <button type="button" class="btn btn-primary">
+        Edit
+    </button>
+</a>
+
+<a href="{% url 'recipes:delete' recipe.id%}">
+    <button type="button" class="btn btn-danger">
+        Delete
+    </button>
+</a>
+
 
 <h2>Steps</h2>
 <ol>
@@ -17,3 +30,5 @@
     <li>{{i}}</li>
     {% endfor %}
 </ul>
+
+{% endblock %}
