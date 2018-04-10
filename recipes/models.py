@@ -45,4 +45,9 @@ class RecipeIngredient (models.Model):
     oz = models.FloatField(null=True, blank=True)
 
     def __str__(self):
-        return self.ingredient.name.title() + " " + self.ingredient.ingredientType.name.title() + "  - " + str(self.oz) + " oz "
+        if(self.oz):
+            return self.ingredient.name.title() + " " + self.ingredient.ingredientType.name.title() + "  - " + str(self.oz) + " oz "
+        
+        else:
+            return self.ingredient.name.title() + " " + self.ingredient.ingredientType.name.title()
+        
