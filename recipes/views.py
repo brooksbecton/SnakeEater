@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView
 
 from .models import Recipe, RecipeIngredient
-from .forms import NewRecipeForm
 
 
 class IndexView(generic.ListView):
