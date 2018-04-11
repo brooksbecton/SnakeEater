@@ -4,33 +4,22 @@ A drink recipe catalog and inventory management system
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Support](#support)
-- [Contributing](#contributing)
+* [Installation](#installation)
+* [Support](#support)
+* [Contributing](#contributing)
 
 ## Installation
 
-* Have Python3 installed
-* run ``
-
-## Usage
-
-Replace the contents of `README.md` with your project's:
-
-- Name
-- Description
-- Installation instructions
-- Usage instructions
-- Support instructions
-- Contributing instructions
-
-Feel free to remove any sections that aren't applicable to your project.
+* Install [Python3](https://www.python.org/downloads/)
+* Install pipenv (`pip install pipenv`)
+* Clone the Repo
+* Activate virtual env (`pipenv shell`)
+* Install dependencies (`pipenv install`)
 
 ## Support
 
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
+Please [open an issue](https://github.com/brooksbecton/SnakeEater/issues) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/brooksbecton/SnakeEater/compare/).
